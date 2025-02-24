@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adjustment Receipt</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <header>
+        <h1>Electricity Supply Company</h1>
+    </header>
+    <div class="container">
+        <h2>Adjustment Receipt</h2>
+        <table class="details-table">
+            <tr>
+                <td>Bill ID:</td>
+                <td>{{ adjustment_details.bill_id }}</td>
+            </tr>
+            <tr>
+                <td>Officer Name:</td>
+                <td>{{ adjustment_details.officer_name }}</td>
+            </tr>
+            <tr>
+                <td>Officer Designation:</td>
+                <td>{{ adjustment_details.officer_designation }}</td>
+            </tr>
+            <tr>
+                <td>Original Bill Amount:</td>
+                <td>${{ adjustment_details.original_bill_amount }}</td>
+            </tr>
+            <tr>
+                <td>Adjustment Amount:</td>
+                <td>${{ adjustment_details.adjustment_amount }}</td>
+            </tr>
+            <tr>
+                <td>Adjustment Reason:</td>
+                <td>{{ adjustment_details.adjustment_reason }}</td>
+            </tr>
+            <tr>
+                <td>Adjustment Date:</td>
+                <td>{{ adjustment_details.adjustment_date }}</td>
+            </tr>
+            <tr>
+                <td>Confirmation Number:</td>
+                <td>{{ adjustment_details.confirmation_number }}</td>
+            </tr>
+        </table>
+    </div>
+    <footer>
+        <p>&copy; 2025, CS473 - Network Security, Lahore University of Management Sciences (LUMS). All rights reserved.</p>
+    </footer>
+</body>
+</html>
